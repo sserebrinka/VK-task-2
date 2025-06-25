@@ -2,7 +2,7 @@ import os
 import time
 from utils.install import install_app
 from utils.verification import is_app_running
-from utils.launch import wait_for_app_launch
+from utils.launch import wait_for_app_launch, close_app
 
 
 def test_installation():
@@ -14,3 +14,5 @@ def test_installation():
 
     assert is_app_running() is True, "VK Teams не запущен"
     print("\nVK Teams успешно запущен")
+
+    close_app()
