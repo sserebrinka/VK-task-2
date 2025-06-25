@@ -46,7 +46,7 @@
 https://github.com/sserebrinka/VK-task-2
 ```
 
-- Перейти в папку проекта VK-task-1
+- Перейти в папку проекта VK-task-2
 ```
 cd VK-task-2
 ```
@@ -58,7 +58,17 @@ pip install -r requirements.txt
 
 - Запуск теста:
 ```
-pytest -s -v
+pytest tests -s -v
+```
+
+- Запуск теста с Allure:
+```
+pytest --alluredir=allure-results
+```
+
+- HTML-отчет:
+```
+allure serve allure-results
 ```
 
 # Инструкция по запуску теста с помощью Sandbox
@@ -67,7 +77,7 @@ pytest -s -v
 https://github.com/sserebrinka/VK-task-2
 ```
 
-- Перейти в папку проекта VK-task-1
+- Перейти в папку проекта VK-task-2
 ```
 cd VK-task-2
 ```
