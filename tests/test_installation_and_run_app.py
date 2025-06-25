@@ -1,5 +1,3 @@
-import os
-import time
 from utils.install import install_app
 from utils.verification import is_app_running
 from utils.launch import wait_for_app_launch, close_app

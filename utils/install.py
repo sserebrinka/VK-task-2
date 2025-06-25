@@ -1,5 +1,4 @@
 from pywinauto.application import Application
-import os
 
 
 INSTALLER_PATH = r"C:\Users\serebrinkaa\Downloads\vkteamssetup.exe"
