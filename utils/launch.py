@@ -9,7 +9,7 @@ load_dotenv()
 user_name = os.getenv("USER_NAME")
 
 APP_NAME = "vkteams.exe"
-APP_PATH = f"C:\Users\{user_name}\AppData\Local\Programs\VK Teams\vkteams.exe"
+APP_PATH = rf"C:\Users\{user_name}\AppData\Local\Programs\VK Teams\vkteams.exe"
 
 def wait_for_app_launch(timeout=3):
     for _ in range(timeout):

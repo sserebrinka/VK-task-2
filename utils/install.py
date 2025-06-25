@@ -6,7 +6,7 @@ import os
 load_dotenv()
 user_name = os.getenv("USER_NAME")
 
-INSTALLER_PATH = f"C:\Users\{user_name}\Downloads\vkteamssetup.exe"
+INSTALLER_PATH = rf"C:\Users\{user_name}\Downloads\vkteamssetup.exe"
 
 def install_app():
     app = Application(backend="uia").start(INSTALLER_PATH)
