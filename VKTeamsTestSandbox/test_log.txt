@@ -1,0 +1,14 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-8.4.1, pluggy-1.6.0 -- C:\Program Files\Python310\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\WDAGUtilityAccount\Desktop\VKTeamsTest\your_test_project
+collecting ... collected 1 item
+
+tests/test_installation_and_run_app.py::test_installation Установка VK Teams успешно завершена
+Процесс vkteams.exe не найден. Запускаем приложение вручную...
+
+VK Teams успешно запущен
+Процесс vkteams.exe завершен
+PASSED
+
+============================= 1 passed in 47.87s ==============================
