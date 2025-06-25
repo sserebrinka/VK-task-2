@@ -63,7 +63,7 @@ pytest tests -s -v
 
 - Запуск теста с Allure:
 ```
-pytest --alluredir=allure-results
+pytest tests --alluredir=allure-results
 ```
 
 - HTML-отчет:
