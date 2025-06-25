@@ -3,3 +3,7 @@ allure-results/
 venv/
 
 __pycache__/
+
+*.exe
+
+.env

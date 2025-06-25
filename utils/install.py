@@ -1,7 +1,12 @@
 from pywinauto.application import Application
+from dotenv import load_dotenv
+import os
 
 
-INSTALLER_PATH = r"C:\Users\serebrinkaa\Downloads\vkteamssetup.exe"
+load_dotenv()
+user_name = os.getenv("USER_NAME")
+
+INSTALLER_PATH = f"C:\Users\{user_name}\Downloads\vkteamssetup.exe"
 
 def install_app():
     app = Application(backend="uia").start(INSTALLER_PATH)
