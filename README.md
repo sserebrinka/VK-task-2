@@ -33,12 +33,20 @@
 - Настрой генерацию отчета о тестировании, чтобы можно было легко просмотреть результаты выполнения тестов.
 
 # Инструкция
+## Перед тестированием установите .exe файл для Windows: https://biz.mail.ru/teams/download/
+- Путь к файлу будет лежать в ```"C:\Users\{USER_NAME}\Downloads\vkteamssetup.exe"```  
+- Также поместите .exe файл в папку ```VKTeamsTestSandbox```  
+
+## Перед тестированием создайте в корне проекта ```.env``` файл
+- Поместите свой username в переменную ```USER_NAME=ваш username```
+
+# Запуск
 - Клонировать репозиторий:
 ```
 https://github.com/sserebrinka/VK-task-2
 ```
 
-- Перейти в папку проекта VK-task-1
+- Перейти в папку проекта VK-task-2
 ```
 cd VK-task-2
 ```
@@ -50,7 +58,17 @@ pip install -r requirements.txt
 
 - Запуск теста:
 ```
-pytest -s -v
+pytest tests -s -v
+```
+
+- Запуск теста с Allure:
+```
+pytest --alluredir=allure-results
+```
+
+- HTML-отчет:
+```
+allure serve allure-results
 ```
 
 # Инструкция по запуску теста с помощью Sandbox
@@ -59,7 +77,7 @@ pytest -s -v
 https://github.com/sserebrinka/VK-task-2
 ```
 
-- Перейти в папку проекта VK-task-1
+- Перейти в папку проекта VK-task-2
 ```
 cd VK-task-2
 ```
